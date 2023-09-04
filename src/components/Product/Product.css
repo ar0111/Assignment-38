@@ -70,5 +70,10 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.188px;
+    cursor: pointer;
+}
+
+.product-btn:hover{
+    background-color: coral;
 }
 

@@ -2,7 +2,7 @@ import { BiCartAdd } from 'react-icons/bi';
 import './Product.css'
 
 // eslint-disable-next-line react/prop-types
-const Product = ({product}) => {
+const Product = ({product, handleAddToCart}) => {
     console.log(product)
     // eslint-disable-next-line react/prop-types, no-unused-vars
     const {img, name, price, seller, ratings} = product;
@@ -16,7 +16,7 @@ const Product = ({product}) => {
             <div className='product-btn-container'>
                 <p className='product-seller'>Manufacturer: {seller}</p>
                 <p className='product-ratings'>Rating: {ratings} Star</p>
-                <button className='product-btn'>Add To Cart <BiCartAdd></BiCartAdd></button>
+                <button className='product-btn' onClick={()=> handleAddToCart(product)}>Add To Cart <BiCartAdd></BiCartAdd></button>
             </div>
         </div>
     );

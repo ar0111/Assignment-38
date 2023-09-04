@@ -1,6 +1,9 @@
 .header{
     background-color: #1C2B35;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .header .container{
