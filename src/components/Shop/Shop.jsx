@@ -2,15 +2,10 @@ import { useEffect, useState } from "react";
 import Product from "../Product/Product";
 import './Shop.css';
 import OrderSummary from "../OrderSummary/OrderSummary";
+import { useLoaderData } from "react-router-dom";
 
 const Shop = () => {
-    const [products, setProducts] = useState([]);
-
-    useEffect(()=>{
-        fetch('products.json')
-        .then(res => res.json())
-        .then(data => setProducts(data))
-    },[])
+    const products = useLoaderData();
 
     const [cart, setCart] = useState([]);
 

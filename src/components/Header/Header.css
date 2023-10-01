@@ -3,7 +3,8 @@
     padding: 20px 0;
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
+    top:0;
 }
 
 .header .container{
@@ -33,4 +34,8 @@
     line-height: normal;
     letter-spacing: 0.085px;
     margin-left: 36px;
+}
+
+.active{
+    color: #FF9900 !important;
 }

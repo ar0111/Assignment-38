@@ -9,8 +9,11 @@ const Product = ({product, handleAddToCart}) => {
     return (
         <div className='product'>
             <div>
-                <img className='product-img' src={img}/>
-                <h3 className='product-title'>{name}</h3>
+                <div className="images">
+                    <img className='product-img' src={img} alt=''/>
+                </div>
+                
+                <h5 className='product-title'>{name}</h5>
                 <h2 className='product-price'>Price: ${price}</h2>
             </div>
             <div className='product-btn-container'>
